@@ -113,7 +113,7 @@ class _HomeState extends State<Home> {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Text('${_localFile.toString()}',
+          child: Text(data,
           style: TextStyle(fontSize: 14, fontFamily: 'Lexend')),
         ),
     ]),
