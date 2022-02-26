@@ -103,18 +103,13 @@ class _HomeState extends State<Home> {
       ),
       body: Stack(children: <Widget>[
         Padding(
-          padding: const EdgeInsets.only(bottom: 100, top: 50),
+          padding: const EdgeInsets.only(bottom: 100, top: 0),
           child: GoogleMap(
               initialCameraPosition: CameraPosition(target: initialCamPosition),
               mapType: MapType.normal,
               onMapCreated: _onMapCreated,
               myLocationEnabled: true,
               markers: Set<Marker>.of(_markers)),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(data,
-          style: TextStyle(fontSize: 14, fontFamily: 'Lexend')),
         ),
     ]),
       floatingActionButton: FloatingActionButton(

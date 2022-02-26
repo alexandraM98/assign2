@@ -103,34 +103,10 @@ class _TakePhotoState extends State<TakePhoto> {
                 ),
               ],
             ),
-            Row(
-              //mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ElevatedButton(
-                    child: Text('Read'),
-                    onPressed: () {
-                      _read();
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ElevatedButton(
-                    child: Text('Save'),
-                    onPressed: () {
-                      _save();
-                    },
-                  ),
-                ),
-
               ],
             ),
-          ],
         ),
-      ),
-    );
+      );
   }
 
   /// Getting the image selected by a user
